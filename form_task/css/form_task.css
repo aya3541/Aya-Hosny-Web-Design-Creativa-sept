@@ -45,7 +45,6 @@
 }
 .left p{
     margin-bottom: 25px;
-    font-weight: 0;
     font-size: 13px;
 
 }
@@ -78,7 +77,6 @@ form textarea {
     padding: 12px;
     border: 1px  #ccc;
     font-size: 14px;
-    font-size: 14px;
     background-color: rgba(237, 239, 240, 0.964);
     width: 90%;
 }
@@ -110,6 +108,6 @@ form button:hover {
 form label{
     margin-right:235px;
     padding-left: 17px;
-    font-family: Arial, sans-serif;
+    
     
 }
