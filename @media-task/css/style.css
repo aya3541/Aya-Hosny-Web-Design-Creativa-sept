@@ -1,0 +1,194 @@
+/* Reset---------------------------------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/* global----------------------------------------*/
+
+.ul{
+    list-style: none;
+
+}
+
+.d-flex{
+    display: flex;
+
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.align-center{
+    align-items: center;
+}
+.padding{
+    padding:2%;
+}
+.w-100{
+    width: 100%;
+}
+.w-70{
+    width: 70%;
+}
+.w-30{
+    width: 30%;
+}
+.w-47{
+    width: 47%;
+}
+.w-55{
+    width: 55%;
+}
+.h-30{
+    height: 30%;
+}
+.h-100{
+    height: 100%;
+}
+.margin{
+    margin: auto;
+}
+.border-redius{
+    border-radius:10px ;
+}
+.margin-bt-2{
+    margin-bottom: 2%;
+}
+.margin-bt-10{
+    margin-bottom: 10%;
+}
+.margin-bt-5{
+    margin-bottom: 5%;
+}
+.font-45{
+    font-size: 45px;
+}
+.font-35{
+    font-size: 35px;
+}
+
+.color-w{
+    color: white;
+}
+
+
+
+/*custom--------------------------------------------*/
+
+
+.nav{
+    padding: 2%;
+}
+.bt {
+    padding: 7px;
+    background-color: rgb(73, 97, 113);
+    color: white;
+    border: none;
+    width: 13%;
+}
+.logo img{
+    width: 23%;
+}
+.title h1,p{
+    margin-bottom: 3%;
+}
+/*-cont-2-------------------------------------------*/
+.cont-2{
+    background-color: #F4F4F4;
+}
+.R{
+    margin-left: 10%;
+}
+.L {
+    width: 40%;
+}
+.L img{
+    margin-top: 41%;
+    margin-left: 5%;
+}
+
+.img-p img{
+    width: 50px;
+}
+/*fresh ------------------------------------------*/
+
+/*eat ------------------------------------------*/
+.Eat{
+    background-color: #F4F4F4;
+    padding: 10%;
+}
+/*wellbeig ------------------------------------------*/
+
+.wellbeing{
+    background: url(../images/wellbeing.png);
+    position: relative;
+    margin-bottom: 25%;
+}
+.wellbeing button{
+    border-radius: 22px;
+    background-color: inherit;
+    border-color: white;
+    color: white;
+    width: 20%;
+    padding: 3px;
+
+}
+.text-well img{
+    width: 50px;
+}
+.text-well{
+    padding-top: 70px;
+    padding-bottom: 20%;
+}
+.text-well p{
+    font-size: 12px;
+    text-align: left;
+    color: #cfc5c5;
+}
+
+.reletiv{
+    position: absolute;
+    background-color: #FCE2D7;
+    margin-left: 5%;
+    padding: 10%;
+    width: 71%;
+    bottom: -33%
+}
+
+.reletiv img{
+    width: 50px;
+    margin-left: 23px;
+}
+
+/*logo-buttom ------------------------------------------*/
+.logo-buttom{
+    background-color: #285e67;
+    padding: 5%;
+    margin-bottom: 20%;
+    
+}
+.logo-but-R {
+    margin-bottom: 61px;
+}
+.icon-buttom{
+    margin-bottom: 3px;
+    
+    
+}
+.fab{
+    color: white;
+    margin-left: 3%;
+    
+
+}
+.logo{
+    margin-left: 18px;
+}

@@ -1,0 +1,93 @@
+
+@media (max-width: 991.98px) {
+    .contaner,.cont-2,.fresh  ,.Eat ,.wellbeing{
+        width: 80%;
+        text-align: center;
+
+    }
+    .L img ,
+    .img-eat{
+        display: none;
+    }
+    .R ,
+    .L-eat{
+        width: 95%;
+    }
+    .R h3{
+        font-size: 30px;
+
+    }
+    .img-p{
+        justify-content:space-between;
+    }
+    .bt-join{
+        width: 10px;
+        margin-bottom: 5%;
+
+    }
+    .text-well{
+        margin-bottom: 10%;
+    }
+    .reletiv{
+        flex-wrap: wrap;
+        bottom: -50%;
+
+    }
+    .logo-but-R {
+        display: block;
+    }
+    .logo{
+        display:inline-block;
+    }
+    .wellbeing{
+        margin-bottom: 40%;
+    }
+
+
+}
+@media (max-width: 575.98px){
+    .contaner,.cont-2,.fresh ,.Eat {
+        width: 70%;
+        text-align: center;
+
+    }
+    .L img ,
+    .img-eat{
+        display: none;
+    }
+
+    .R ,
+    .L-eat{
+        width: 95%;
+    }
+    .R h3 {
+        font-size: 20px;
+
+    }
+    .R p{
+        font-size: 10px;
+    }
+    .img-p{
+        justify-content:space-between;
+    }
+    .fresh{
+        display: block;
+        margin: auto;
+        font-size: smaller;
+    }
+    .fresh h3{
+        font-size: smaller;
+    }
+    .icons img{
+        width: 40px;
+    }
+    .wellbeing{
+        margin-bottom: 70%;
+    }
+    .reletiv{
+        flex-wrap: wrap;
+        bottom: -45%;
+
+    }
+
+}
