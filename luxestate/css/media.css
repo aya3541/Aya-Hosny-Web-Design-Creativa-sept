@@ -1,0 +1,173 @@
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container ul{
+        display: none
+    }
+    .menu-icon{
+        display: block;
+        color: black;
+    }
+    .search ,.phon-location ,.scroll {
+        display: none
+    }
+    .ours{
+        display: block;
+        width: 70%;
+    }
+    .card{
+        display: block;
+        width: 100%;
+    }
+    .our{
+        width: 100%;
+    }
+    .card >div{
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .img-s{
+        display: none;
+    }
+    .text-s{
+        width: 100%;
+    }
+    .card_d{
+        display: none;
+    }
+    .location-aws,.location-2,.bt-more{
+        display: none;
+    }
+    .top-bar,.buttom-bar  {
+        display: block;
+    }
+    .location-aws,.location-2,.bt-more{
+        display: none;
+    }
+    .top-bar,.buttom-bar  {
+        display: block;
+    }
+    .cards{
+        display: block;
+        width: 70;
+        
+    }
+    .title ,.cards >div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .left{
+        flex-wrap: wrap;
+    }
+
+    .subscribe{
+        width: 30%;
+    }
+    .s-awesome {
+        display: block;
+        width: 70%;
+    }
+    .s-awesome  >div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .menu-icon{
+        display: block;
+        color: black;
+    }
+    .search ,.phon-location ,.scroll {
+        display: none
+    }
+    .ours{
+        display: block;
+        width: 70%;
+    }
+    .card{
+        display: block;
+        width: 100%;
+    }
+    .our{
+        width: 100%;
+    }
+    .card >div{
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .img-s{
+        display: none;
+    }
+    .text-s{
+        width: 100%;
+    }
+    .card_d{
+        display: none;
+    }
+    .top-bar,.buttom-bar  {
+        display: block;
+    }
+    .location-aws,.location-2,.bt-more{
+        display: none;
+    }
+    .top-bar,.buttom-bar ,.left {
+        display: block;
+    }
+    .subscribe{
+        width: 30%;
+    }
+    .cards{
+        display: block;
+        width: 70;
+        
+    }
+    .title ,.cards >div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .super-awesome{
+        display: block;
+        width: 70%;
+    }
+    .super-awesome >div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .s-awesome {
+        display: block;
+        width: 70%;
+    }
+    .s-awesome  >div{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

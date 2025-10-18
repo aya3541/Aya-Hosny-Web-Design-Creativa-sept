@@ -1,0 +1,35 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main {
+    /* width: 1100PX; */
+    position: relative;
+    margin: auto;
+}
+
+.r {
+    width: 100%;
+    position: relative;
+}
+
+.car {
+    width: 170px;
+    position: absolute;
+    bottom: 43%;
+    left: 0%;
+    animation-duration: 2s;
+    animation-name: changdiraction;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changdiraction {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(2000PX);
+    }
+}
