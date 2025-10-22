@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="Paw ">
+        <div class="container d-flex align-items-start ">
+            <div class="bg-img container-fluid position-relative  text-white ">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                <nav class=" navbar navbar-expand-lg  bg-transparent navbar-dark top-0">
+                    <div class="container">
+                        <i class="fa-solid fa-paw fs-6 "></i>
+                        <i class="fa-solid fa-paw fs-6  mt-3"></i>
+
+                        <a class="navbar-brand text-white fw-bold fs-6" href="#">Pows n’Play </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        shop
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">A</a></li>
+                                        <li><a class="dropdown-item" href="#">B</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">A</a></li>
+                                        <li><a class="dropdown-item" href="#">B</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <button class="btn btn-light  rounded-5 ms-5" type="submit">Get Started</button>
+                    </div>
+                </nav>
+                <div class="position-absolute top-50 start-2 w-50 row">
+                    <div class=" col-12 col-md-10">
+                        <h1 class="fw-bold display-5 fs-1 ">Pawsitively Perfect: Where Every Pet's Dream Comes True!</h1>
+                        <p class="lead mb-4 fs-6">Welcome to Paws n’ Play, the ultimate destination for pet lovers! Explore a world of tail-wagging joy and furry companionship with our wide range of products and services. 
+                            From pampering essentials to playful toys, we're here to make every moment with your pet pawsitively perfect!"</p>
+                        <button class="btn bg-transparent rounded-5 pb-2 pt-0 text-white border-white">Shop Now
+                            <i class="fa-solid fa-paw fs-6 "></i>
+                            <i class="fa-solid fa-paw fs-6  mt-3"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="shop ">
+        <div class="container ">
+            <div class="container-fluid border-bottom">
+                <nav class=" navbar navbar-expand-lg  top-0 text-black d-flex align-items-center gap-2 ">
+                    <i class="fa-solid fa-paw fs-6 "></i>
+                    <i class="fa-solid fa-paw fs-6  mt-3"></i>
+                    <a class="navbar-brand  fw-bold fs-6" href="#">Shop </a>
+                </nav>
+            </div>
+            <div class="border  p-3">
+                <div class=" d-flex justify-content-between align-items-start">
+                    <h3>Featured Products</h3>
+                    <div class="position-relative w-25 rounded-5">
+                        <input type="text" class="form-control ps-5 bg-light border-0 search-input d-none d-md-block" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-dark " id="pills-Random-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Random" type="button" role="tab" aria-controls="pills-Random-"
+                                aria-selected="true">Random</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark " id="pills-Cat-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Cat" type="button" role="tab" aria-controls="pills-Cat"
+                                aria-selected="false">Cat</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark " id="pills-Dogs-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Dogs" type="button" role="tab" aria-controls="pills-Dogs"
+                                aria-selected="false">Dogs</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark " id="pills-Fish-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Fish" type="button" role="tab" aria-controls="pills-Fish"
+                                aria-selected="false">Fish</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-dark " id="pills-Birds-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Birds" type="button" role="tab" aria-controls="pills-Birds"
+                                aria-selected="false">Birds</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="pills-tabContent "  >
+                    <div class="tab-pane fade show active  " id="pills-Random" role="tabpanel"
+                        aria-labelledby="pills-Random-tab" tabindex="0">
+                        <div class=" row ">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0 ">
+                                <div class="position-relative rounded-5  d-inline-block ">
+                                    <img src="images/card1.png" alt="">
+                                    <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                        <div class=" d-flex justify-content-bettwen gap-5 mt-2">
+                                            <div class="ml-10" >
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div class="ml-10">
+                                                <img src="images/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt ml-10">Multivitamin For Cat</h3>
+                                        <p class="ml-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.
+                                        </p>
+                                        <div class="d-flex justify-content-bettwen  ">
+                                            <button class="bt rounded-2 " type="button" >+1</button>
+                                            <button class="bt rounded-5" type="button" >Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4  mb-3 mb-md-0 ">
+                                <div class="position-relative rounded-5  d-inline-block">
+                                    <img  src="images/card2.png" alt="">
+                                    <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                        <div class=" d-flex justify-content-bettwen gap-5 mt-2">
+                                            <div class="ml-10" >
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div class="ml-10">
+                                                <img src="images/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt ml-10">Multivitamin For Cat</h3>
+                                        <p class="ml-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.
+                                        </p>
+                                        <div class="d-flex justify-content-bettwen  ">
+                                            <button class="bt rounded-2 " type="button" >+1</button>
+                                            <button class="bt rounded-5" type="button" >Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0 ">
+                                <div class="position-relative rounded-5  d-inline-block">
+                                    <img  src="images/card3.png" alt="">
+                                    <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                        <div class=" d-flex justify-content-bettwen gap-5 mt-2">
+                                            <div class="ml-10" >
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div class="ml-10">
+                                                <img src="images/heart.png" alt="">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt ml-10">Multivitamin For Cat</h3>
+                                        <p class="ml-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.
+                                        </p>
+                                        <div class="d-flex justify-content-bettwen  ">
+                                            <button class="bt rounded-2 " type="button" >+1</button>
+                                            <button class="bt rounded-5" type="button" >Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="pills-Cat" role="tabpanel"
+                        aria-labelledby="pills-Cat-tab" tabindex="0">
+                        <div class="row ">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/cat1.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/cat2.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/cat3.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="pills-Dogs" role="tabpanel"
+                        aria-labelledby="pills-Dogs-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/dog1.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0 ">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/dog.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/dog3.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade " id="pills-Fish" role="tabpanel"
+                        aria-labelledby="pills-Fish-tab" tabindex="0">
+                        <div class="row ">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/f1.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/f2.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/f3.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="pills-Birds" role="tabpanel"
+                        aria-labelledby="pills-Birds-tab" tabindex="0">
+                        <div class="row ">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0 ">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/b1.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/b2.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <div class="position-relative rounded-5 d-inline-block">
+                                    <img src="images/b3.png" alt="" class="w-100 rounded-5 h">
+                                    <div class="overlay rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-between gap-2 mt-2 w-100 px-3">
+                                            <div>
+                                                <span>₦15,000.00</span>
+                                            </div>
+                                            <div>
+                                                <img src="images/heart.png" alt="Heart">
+                                            </div>
+                                        </div>
+                                        <h3 class="mt-2">Multivitamin For Cat</h3>
+                                        <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nihil.</p>
+                                        <div class="d-flex justify-content-between gap-2 w-100 px-3 mt-2">
+                                            <button class="bt rounded-2" type="button">+1</button>
+                                            <button class="bt rounded-5" type="button">Add To Card</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end  mb-5  mt-5">
+                    <h3 >View More >>></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Our Team">
+        <div class="container ">
+            <div class="container-fluid border-bottom">
+                <nav class=" navbar navbar-expand-lg  top-0 text-black d-flex align-items-center gap-2 ">
+                    <i class="fa-solid fa-paw fs-6 "></i>
+                    <i class="fa-solid fa-paw fs-6  mt-3"></i>
+                    <a class="navbar-brand  fw-bold fs-6" href="#">Our Team </a>
+                </nav>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class=" row ms-0 mt-5">
+                    <div class="col-12 col-md-3  mb-3 mb-md-0">
+                        <div class="position-relative rounded-5  d-inline-block shadow h-t ">
+                            <img class="rounded-top-5 mb-5" src="images/T1.png" alt="">
+                            <h3 class="fs-5 ms-3">Dr. Olivia Rhye</h3>
+                            <p class="text-secondary ms-3">Senior Veterinarian
+                            </p>
+                            <div class="d-flex justify-content-center gap-4">
+                                <div><i class="fab fa-facebook-f text-secondary"></i></div>
+                                <div> <i class="fab fa-twitter text-secondary"></i></div>
+                                <div><i class="fas fa-globe text-secondary"></i></div>
+                            </div>
+                            <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                <h3 class="mt ml-10">Dr. Olivia Rhye</h3>
+                                <p class="ml-10">Senior Veterinarian
+                                </p>
+                                <button class="bt rounded-5" type="button" >Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3 mb-md-0 ">
+                        <div class="position-relative rounded-5  d-inline-block shadow h-t ">
+                            <img class="rounded-top-5 mb-5" src="images/T2.png" alt="">
+                            <h3 class="fs-5 ms-3">Dr. Olivia Rhye</h3>
+                            <p class="text-secondary ms-3">Senior Veterinarian
+                            </p>
+                            <div class="d-flex justify-content-center gap-4">
+                                <div><i class="fab fa-facebook-f text-secondary"></i></div>
+                                <div> <i class="fab fa-twitter text-secondary"></i></div>
+                                <div><i class="fas fa-globe text-secondary"></i></div>
+                            </div>
+                            <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                <h3 class="mt ml-10">Dr. Olivia Rhye</h3>
+                                <p class="ml-10">Senior Veterinarian
+                                </p>
+                                <button class="bt rounded-5" type="button" >Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <div class="position-relative rounded-5  d-inline-block shadow h-t ">
+                            <img class="rounded-top-5 mb-5" src="images/T3.png" alt="">
+                            <h3 class="fs-5 ms-3">Dr. Olivia Rhye</h3>
+                            <p class="text-secondary ms-3">Senior Veterinarian
+                            </p>
+                            <div class="d-flex justify-content-center gap-4">
+                                <div><i class="fab fa-facebook-f text-secondary"></i></div>
+                                <div> <i class="fab fa-twitter text-secondary"></i></div>
+                                <div><i class="fas fa-globe text-secondary"></i></div>
+                            </div>
+                            <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                <h3 class="mt ml-10">Dr. Olivia Rhye</h3>
+                                <p class="ml-10">Senior Veterinarian
+                                </p>
+                                <button class="bt rounded-5" type="button" >Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3 mb-md-0 ">
+                        <div class="position-relative rounded-5  d-inline-block shadow h-t ">
+                            <img class="rounded-top-5 mb-5" src="images/T1.png" alt="">
+                            <h3 class="fs-5 ms-3">Dr. Olivia Rhye</h3>
+                            <p class="text-secondary ms-3">Senior Veterinarian
+                            </p>
+                            <div class="d-flex justify-content-center gap-4">
+                                <div><i class="fab fa-facebook-f text-secondary"></i></div>
+                                <div> <i class="fab fa-twitter text-secondary"></i></div>
+                                <div><i class="fas fa-globe text-secondary"></i></div>
+                            </div>
+                            <div class=" overlay  rounded-3  d-flex flex-column justify-content-centeralign-items-center ">
+                                <h3 class="mt ml-10">Dr. Olivia Rhye</h3>
+                                <p class="ml-10">Senior Veterinarian
+                                </p>
+                                <button class="bt rounded-5" type="button" >Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+    </section>
+    <section class="Blog d-none d-md-block">
+        <div class="container ">
+            <div class="container-fluid border-bottom">
+                <nav class=" navbar navbar-expand-lg  top-0 text-black d-flex align-items-center gap-2 ">
+                    <i class="fa-solid fa-paw fs-6 "></i>
+                    <i class="fa-solid fa-paw fs-6  mt-3"></i>
+                    <a class="navbar-brand  fw-bold fs-6" href="#">Our Team </a>
+                </nav>
+            </div>
+            <div class="row mt-5  mb-5">
+                <div class="col-12 col-md-6 ">
+                    <h2>Milestone: 20,000 Pets Treated</h2>
+                    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, 
+                        at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+                        <h5>Renewed target</h5>
+                        <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor.
+                            Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p>
+                </div>
+                <div class="col-12 col-md-6 position-relative p-0 ">
+                    <img class="w-100 h-t" src="images/dog4.png" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" fill="white" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                        </svg>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Get-in-touch">
+        <div class="container ">
+            <div class="container-fluid border-bottom">
+                <nav class=" navbar navbar-expand-lg  top-0 text-black d-flex align-items-center gap-2 text-white ">
+                    <i class="fa-solid fa-paw fs-6 "></i>
+                    <i class="fa-solid fa-paw fs-6  mt-3"></i>
+                    <a class="navbar-brand  fw-bold fs-6 text-white " href="#">Get in touch</a>
+                </nav>
+            </div>
+            <div class="row mt-5 border-bottom">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <form class="bg-white text-black p-5  rounded-5 mb-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">First name </label>
+                            <input type="name"  placeholder="First name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Last name</label>
+                            <input type="name" placeholder="Last name" class="form-control" >
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@company.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <label for="floatingTextarea">Message</label>
+                        <textarea class="form-control p-3" id="floatingTextarea"></textarea>
+                        
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1"  >
+                            <label class="form-check-label"  for="exampleCheck1">You agree to our friendly privacy policy.</label>
+                        </div>
+                        <button type="submit" class="btn btn-color w-100">Send messge</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-between align-items-center flex-wrap order-1 order-md-2">
+                    <div class="col-6 fs-6" >
+                        <i class="fas fa-envelope"></i>
+                        <h6>Email</h6>
+                        <p>Our friendly team is here to help.</p>
+                        <h6>hello@pawsnplay.com</h6>
+                    </div>
+                    <div class="col-6 fs-6" >
+                        <i class="fas fa-comments"></i>
+                        <h6>Live chat</h6>
+                        <p>Our friendly team is here to help.</p>
+                        <h6>hello@pawsnplay.com</h6>
+                    </div>
+                    <div class="col-6 fs-6" >
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6>Office</h6>
+                        <p>Come say hello at our office HQ.</p>
+                        <h6>hello@pawsnplay.com</h6>
+                    </div>
+                    <div class="col-6 fs-6" >
+                        <i class="fas fa-phone-alt"></i>
+                        <h6>Phone</h6>
+                        <p>Our friendly team is here to help.</p>
+                        <h6>hello@pawsnplay.com</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row d-flex  align-items-center mt-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-5">
+                    <h6>Join our newsletter</h6>
+                    <p>Be the first to receive latest updates on promo, sales and offers</p>
+                </div>
+                <div class="col-12 col-md-4  mb-3 mb-md-5">
+                    <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                </div>
+                <div class=" col-12 col-md-4"><button type="submit" class="btn  btn-light col-12 col-md-3 ">Subscribe</button></div>
+            
+            </div> -->
+            <div class="row d-flex align-items-center mt-3 gap-5">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <h6>Join our newsletter</h6>
+                    <p>Be the first to receive latest updates on promo, sales and offers</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <input type="email" class="form-control w-100" placeholder="Enter your email">
+                </div>
+                <div class="col-12 col-md-3">
+                    <button type="submit" class="btn btn-light w-100">Subscribe</button>
+                </div>
+            </div>
+
+
+
+            <div class="row mt-5 border-bottom">
+                <div class=" col-12 col-md-3">
+                    <div class=" d-flex  align-items-center">
+                        <div>
+                        <i class="fa-solid fa-paw fs-6 "></i>
+                        <i class="fa-solid fa-paw fs-6  mt-3"></i>
+                        </div>
+                        <div><a class="navbar-brand  fw-bold fs-6 text-white " href="#">Paw’s play</a></div>
+                    </div>
+                    <p>Where wagging tails and purring hearts reign supreme!</p>
+                </div>
+                <div class=" col-12 col-md-9 d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap gap-5">
+                    <ul  class="list-unstyled flex-fill">
+                        <li class="fw-bold  "><a  class="text-decoration-none text-white"href="#">Shop</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Pet Adoption</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Nutrition</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Pet Crre</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Pet Food</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Pricing</a></li>
+                    </ul>
+                    <ul  class="list-unstyled flex-fill ">
+                        <li class="fw-bold  "><a  class="text-decoration-none text-white"href="#">Company</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">About us</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Careers</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Press</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">News</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Contact</a></li>
+                    </ul>
+                    <ul  class="list-unstyled flex-fill">
+                        <li class="fw-bold  "><a  class="text-decoration-none text-white"href="#">Services</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Grooming</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Boarding</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Traaining</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Vetinary</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Support</a></li>
+                        
+                    </ul>
+                    <ul  class="list-unstyled flex-fill">
+                        <li class="fw-bold  "><a  class="text-decoration-none text-white"href="#">Social</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Twitter</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">LinkedIn</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Feacebook</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">AngelList</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Dribbble</a></li>
+                    </ul>
+                    <ul  class="list-unstyled col-6 flex-fill">
+                        <li class="fw-bold  "><a  class="text-decoration-none text-white"href="#">Legal</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Terms</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Privacy</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Cookies</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">License</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Settting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" row d-flex justify-content-between align-items-center">
+                <div class=" col-12 col-md-4 fs-6 text-secondary m-5">
+                    <h6>© 2024 Paws n’ Play. All rights reserved.</h6>
+                </div>
+                <div class=" col-12 col-md-6 d-flex gap-5">
+                    <a href="#" class="text-secondary fs-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-secondary fs-4"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-secondary fs-4"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-secondary fs-4"><i class="fas fa-globe"></i></a>
+                    <a href="#" class="text-secondary fs-4"><i class="fab fa-github"></i></a>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

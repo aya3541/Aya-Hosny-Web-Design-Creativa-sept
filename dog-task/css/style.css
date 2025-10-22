@@ -1,0 +1,63 @@
+.mt{
+    margin-top: 43%;
+
+}
+.ml-10{
+    margin-left: 10%;
+}
+.h{
+    height: 300px;
+}
+.h-t{
+    height: 450px;
+}
+
+
+
+.bg-img{
+    background: url(../images/dog.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: black!important;
+    color:white!important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* bg-dark bg-opacity-50 */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    .position-relative:hover .overlay {
+    opacity: 1;
+    }
+    .bt{
+        border: none;
+        background-color: rgb(26, 64, 98);
+        color: white;
+        margin-bottom: 0%;
+        margin-left: 40px;
+    }
+
+    .Get-in-touch{
+        background-color: #101828;
+        color: white;
+    }
+    .btn-color{
+        background-color: #101828 !important;
+        color: white !important;
+        
+    }
