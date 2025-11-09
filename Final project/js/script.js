@@ -98,22 +98,55 @@ if (document.getElementById('form')) {
 }
 
 //  =======input tag
-let container = document.getElementById("tags-container");
-let input = document.getElementById("tag-input");
 
 
-function addTag(text) {
-    const tag = document.createElement("span");
+// let container = document.getElementById("tags-container");
+// let input = document.getElementById("tag-input");
+// function addTag(text) {
+//     const tag = document.createElement("span");
+//     tag.classList.add("tag");
+//     tag.textContent = text;
+
+//     const removeBtn = document.createElement("span");
+//     removeBtn.textContent = "×";
+//     removeBtn.classList.add("remove");
+//     removeBtn.onclick = () => container.removeChild(tag);
+
+//     tag.appendChild(removeBtn);
+//     container.insertBefore(tag, input);
+// }
+
+
+// let initialTags = ["English", "Arabic", "French"];
+// initialTags.forEach(tag => addTag(tag));
+
+
+// input.addEventListener("keydown", function(e) {
+//     if (e.key === "Enter" && input.value.trim() !== "") {
+//         e.preventDefault();
+//         addTag(input.value.trim());
+//         input.value = "";
+//     }
+// });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let container = document.getElementById("tags-container");
+    let input = document.getElementById("tag-input");
+
+    function addTag(text) {
+    let tag = document.createElement("span");
     tag.classList.add("tag");
     tag.textContent = text;
 
-    const removeBtn = document.createElement("span");
+    let removeBtn = document.createElement("span");
     removeBtn.textContent = "×";
     removeBtn.classList.add("remove");
     removeBtn.onclick = () => container.removeChild(tag);
 
     tag.appendChild(removeBtn);
-    container.insertBefore(tag, input);
+    container.insertBefore(tag,input);
 }
 
 
@@ -128,6 +161,9 @@ input.addEventListener("keydown", function(e) {
         input.value = "";
     }
 });
+});
+
+
 
 // -------form------------------------------------------------------------------------
 let nameValidation = (input) => {
@@ -142,9 +178,6 @@ let nameValidation = (input) => {
         handleError(input)
         input.nextElementSibling.innerText = ""
     }
-
-
-
 }
 
 let handleError = (input, msg = "") => {
@@ -164,24 +197,33 @@ let emailValidation = (input) => {
 }
 
 
-
-
-
-
-
 // -------jquery------------------------------------------------------------------------
 
-if (document.querySelector('.owl-carousel')) {
-    $(document).ready(function () {
+// if (document.querySelector('.owl-carousel')) {
+//     $(document).ready(function () {
+//         $(".owl-carousel").owlCarousel({
+//             items: 7,
+//             margin: 20,
+//             loop: true,
+//             nav: true,
+//             navText: ['<div class="circle-arrow bg-secondary-subtle align-items-center "><i class="fa-solid fa-angle-left m-arrow"></i></div>',
+//                 '<div class=" circle-arrow  bg-secondary-subtle "><i class="fa-solid fa-angle-right m-arrow   "></i></div>']
+
+//         });
+//     });
+
+// }
+$(document).ready(function () {
+    if ($('.owl-carousel').length) {
         $(".owl-carousel").owlCarousel({
             items: 7,
             margin: 20,
             loop: true,
             nav: true,
-            navText: ['<div class="circle-arrow bg-secondary-subtle align-items-center "><i class="fa-solid fa-angle-left m-arrow"></i></div>',
-                '<div class=" circle-arrow  bg-secondary-subtle "><i class="fa-solid fa-angle-right m-arrow   "></i></div>']
-
+            navText: [
+                '<div class="circle-arrow bg-secondary-subtle align-items-center "><i class="fa-solid fa-angle-left m-arrow"></i></div>',
+                '<div class=" circle-arrow  bg-secondary-subtle "><i class="fa-solid fa-angle-right m-arrow"></i></div>'
+            ]
         });
-    });
-
-}
+    }
+});
