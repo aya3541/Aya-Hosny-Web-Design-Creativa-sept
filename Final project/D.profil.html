@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <section class="banner mb-5 bg-p2 ">
+        <div class="container  position-relative ">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 fixed-top">
+                <div class="container">
+                    <!-- logo -->
+                    <a class="navbar-brand fw-bold fs-4" href="#">
+                        <img src="images/logo.svg" class="img-fluid" style="max-width: 120px;" alt="">
+                    </a>
+                    <button class="navbar-toggler border-0 text-info" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="w-50"
+                                    src="images/logo.svg" alt=""> </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- dropdown -->
+                            <ul class="navbar-nav col-5 mb-2 ms-5 text-c">
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-info" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                    </a>
+                                    <div class="dropdown-menu home-dropdown bg-primary p-3">
+                                        <div class="row d-flex flex-wrap align-items-start" style="row-gap: 5px;">
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home </h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-01.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 1</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-02.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 2</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-03.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 3</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-04.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 4</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-05.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 5</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-06.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 6</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-07.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 7</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-08.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 8</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-09.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 9</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-10.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 10</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-11 .jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 11</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-12.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 12</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-13.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 13</h6>
+                                            </div>
+
+                                            <div class="col-md-2 d-flex flex-column align-items-center">
+                                                <img class="w-100 rounded-3 d-block" src="images/home-14.jpg" alt="">
+                                                <h6 class="text-white mt-2 mb-0">General Home 14</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Doctors
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="P.dashboard.html"
+                                                target="_blank">Doctor Dashboard</a></li>
+                                        <li><a class="dropdown-item border-bottom " href="#">Available Timing</a></li>
+                                        <li><a class="dropdown-item  border-bottom" href="#">Patients List</a></li>
+                                        <li><a class="dropdown-item  border-bottom" href="#">Patients Profile</a></li>
+                                        <li><a class="dropdown-item  border-bottom" href="#">Chat</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="P.setting.html"
+                                                target="_blank">Profile Setting</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Review</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Doctor Register</a></li>
+                                        <li><a class="dropdown-item " href="#">Blog </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Patients
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="P.dashboard.html"
+                                                target="_blank">Patient Dashboard</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="D.profil.html"
+                                                target="_blank">Doctor Profile</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="P.setting.html"
+                                                target="_blank">Profile Setting</a></li>
+                                        <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pharmacy
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="#">Patient Dashboard</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="D.profil.html"
+                                                target="_blank">Doctor Profile</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Profile Setting</a></li>
+                                        <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="#">Patient Dashboard</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="D.profil.html"
+                                                target="_blank">Doctor Profile</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Profile Setting</a></li>
+                                        <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="#">Blog List</a></li>
+                                        <li><a class="dropdown-item border-bottom" href="#">Blog Grid</a></li>
+                                        <li><a class="dropdown-item " href="#">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item border-bottom" href="#">Admin</a></li>
+                                        <li><a class="dropdown-item " href="#"> Pharmacy Admin </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- icons -->
+                    <div class=" icons-wrapper d-flex gap-2 ">
+                        <div class=" align-items-center justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </div>
+                        <div class="profil-icon d-flex align-items-center justify-content-center ">
+                            <i class="fa-regular fa-sun text-secondary "></i>
+                        </div>
+                        <div class="profil-icon d-flex align-items-center justify-content-center  position-relative ">
+                            <i class="fa-regular fa-bell text-secondary"></i>
+                            <div
+                                class="position-absolute bg-danger top-0 start-100  translate-middle p-1 border border-light rounded-circle">
+                            </div>
+                        </div>
+                        <div class="profil-icon  d-flex align-items-center justify-content-center  position-relative">
+                            <i class="fa-regular fa-comment-dots text-secondary"></i>
+                            <div
+                                class="position-absolute bg-success top-0 start-100  translate-middle p-1 border border-light rounded-circle">
+                            </div>
+                        </div>
+                        <div class="profil-icon  d-flex align-items-center justify-content-center  position-relative">
+                            <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                            <div
+                                class="position-absolute bg-primary top-0 start-100  translate-middle p-1 border border-light rounded-circle">
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center overflow-hidden "
+                            style="width: 30px;height:30;border-radius:50%;">
+                            <img class="w-100" src="images/profile-06.jpg" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="  p-5 ">
+                <div class="d-flex align-items-center justify-content-center mt-3 mb-5">
+                    <div>
+                        <i class="fa-solid fa-house text-info"></i>
+                    </div>
+                    <div class="ms-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5>Patient</h5>
+                    </div>
+                    <div class="ms-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5>Doctor Profile</h5>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h2 class="fw-bold fs-1">Doctor Profile</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dr.Darren -->
+    <section>
+        <div class="container rounded-3 shadow-sm border p-4 ">
+            <div class="row align-items-center flex-wrap">
+                <!-- doctor -->
+                <div class="col-9 col-md-2  ms-5 ms-md-0 mb-5 pt-0 mt-0 text-center ">
+                    <img class="w-75 rounded-4" src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="">
+                </div>
+
+                <!-- detalies-->
+                <div class="col-12 col-md-6 text-center text-md-start mb-3">
+                    <h4>Dr. Darren Elder</h4>
+                    <p class="mt-1">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                    <span class="text-info">
+                        <img class="me-2" src="images/download.png" style="width: 23px;" alt="">Dentist
+                    </span><br>
+
+                    <div class="mt-1">
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled text-warning"></i>
+                        <i class="fas fa-star filled" style="color: rgb(189,199,208);"></i>
+                        <span class="text-secondary-subtle">(35)</span>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class="fas fa-map-marker-alt text-secondary"></i>
+                        <span class="text-secondary">Newyork, USA -</span>
+                    </div>
+
+                    <!-- small image-->
+                    <div class="d-flex gap-2 mt-3 justify-content-center justify-content-md-start flex-wrap">
+                        <a href="images/feature-01-CiUCRVgG.jpg" data-lightbox="img" data-title="Feature 1">
+                            <img class="rounded-3" src="images/feature-01-CiUCRVgG.jpg" style="width:50px; height:30px;"
+                                alt="">
+                        </a>
+                        <a href="images/feature-02-CidU_YCh.jpg" data-lightbox="img" data-title="Feature 2">
+                            <img class="rounded-3" src="images/feature-02-CidU_YCh.jpg" style="width:50px; height:30px;"
+                                alt="">
+                        </a>
+                        <a href="images/feature-03-CsVmaQqg.jpg" data-lightbox="img" data-title="Feature 3">
+                            <img class="rounded-3" src="images/feature-03-CsVmaQqg.jpg" style="width:50px; height:30px;"
+                                alt="">
+                        </a>
+                        <a href="images/feature-04-BgySQc8e.jpg" data-lightbox="img" data-title="Feature 4">
+                            <img class="rounded-3" src="images/feature-04-BgySQc8e.jpg" style="width:50px; height:30px;"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="d-flex mt-3">
+                        <button type="button" class="border border-secondary bg-white rounded-1 border-1 p-1 "
+                            style="font-size:12px;">Dental Fillings</button>
+                        <button type="button" class="border border-secondary bg-white rounded-1 border-1 ms-3 p-1 "
+                            style="font-size:12px;">Teeth Whitneing</button>
+
+                    </div>
+                </div>
+
+                <!-- col3 -->
+                <div class="col-9 col-md-2  text-center text-md-start text-secondary" style="margin-left: 10%;">
+                    <div class="mb-2"><i class="fa-regular fa-thumbs-up"></i><span class="ms-2">99%</span></div>
+                    <div class="mb-2"><i class="fa-regular fa-comment"></i><span class="ms-2">35 Feedback</span></div>
+                    <div class="mb-2"><i class="fa-solid fa-location-dot"></i><span class="ms-2">Newyork, USA</span>
+                    </div>
+                    <div class="mb-4"><i class="far fa-money-bill-alt"></i><span class="ms-2">$100 Per hour</span></div>
+
+                    <div class="d-flex justify-content-center justify-content-md-start flex-wrap gap-5  mb-3 text-dark">
+                        <i class="far fa-bookmark"></i>
+                        <i class="fa-regular fa-message"></i>
+                        <i class="fa-solid fa-phone "></i>
+                        <i class="fa-solid fa-video d-md-none "></i>
+                    </div>
+                    <i class="fa-solid fa-video mb-4 mt-md-3 d-none d-md-block text-dark"></i>
+                    <button class="btn bg-primary text-white rounded-5 p-2 px-4 fs-6 w-100">Book Appointment</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- tablist -->
+    <section>
+        <div class="container rounded-3 shadow-sm border p-4  mt-5">
+            <div class="nav">
+                <ul class="row nav nav-pills mb-3 w-100 justify-content-between text-center border-bottom "
+                    id="pills-tab" role="tablist">
+                    <li class=" col-12 col-md-3 nav-item text-center fw-bold" role="presentation">
+                        <button class="nav-link active w-100  rounded-0" id="pills-Overview-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Overview" type="button" role="tab" aria-controls="pills-Overview"
+                            aria-selected="true">Overview</button>
+                    </li>
+                    <li class="col-12 col-md-3 nav-item text-center fw-bold" role="presentation">
+                        <button class="nav-link w-100 rounded-0" id="pills-Locations-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Locations" type="button" role="tab" aria-controls="pills-Locations"
+                            aria-selected="false">Locations</button>
+                    </li>
+                    <li class="col-12 col-md-3 nav-item text-center fw-bold" role="presentation">
+                        <button class="nav-link w-100  rounded-0" id="pills-Reviews-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Reviews" type="button" role="tab" aria-controls="pills-Reviews"
+                            aria-selected="false">Reviews</button>
+                    </li>
+                    <li class="col-12 col-md-3 nav-item text-center fw-bold" role="presentation">
+                        <button class="nav-link w-100 rounded-0" id="pills-Business-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Business" type="button" role="tab" aria-controls="pills-Business"
+                            aria-selected="false">Business Hours</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Overview-->
+                    <div class=" tab-pane fade show active" id="pills-Overview" role="tabpanel"
+                        aria-labelledby="pills-Overview-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-12 col-md-9 mt-3">
+                                <h5>About Me</h5>
+                                <p class="text-secondary ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                <h5 class="mt-5 mb-4 ">Education</h5>
+                                <ul class="timeline list-unstyled position-relative">
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <h6 class=" h-hover fw-bold mb-1 "> American Dental Medical University</h6>
+                                        <p class="text-muted mb-0 text-secondary">BDS</p>
+                                        <p class="text-muted mb-0 text-secondary">1998 - 2003</p>
+                                    </li>
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <h6 class="  h-hover fw-bold mb-1 ">American Dental Medical University</h6>
+                                        <p class="text-muted mb-0 text-secondary">MDS</p>
+                                        <p class="text-muted mb-0 text-secondary">2003 - 2005</p>
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-5 mb-4 ">Work & Experience</h5>
+                                <ul class="timeline list-unstyled position-relative">
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <h6 class=" h-hover fw-bold mb-1 "> Glowing Smiles Family Dental Clinic</h6>
+                                        <p class="text-muted mb-0 text-secondary">2010 - Present (5 years)</p>
+                                    </li>
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <h6 class="  h-hover fw-bold mb-1 ">Comfort Care Dental Clinic</h6>
+                                        <p class="text-muted mb-0 text-secondary">2007 - 2010 (3 years)</p>
+                                    </li>
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <h6 class="  h-hover fw-bold mb-1 ">Dream Smile Dental Practice</h6>
+                                        <p class="text-muted mb-0 text-secondary">2005 - 2007 (2 years)</p>
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-5 mb-4 ">Awards</h5>
+                                <ul class="timeline list-unstyled position-relative">
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <p class="text-primary mb-1 ">July 2019</p>
+                                        <h6 class=" fw-bold mb-1 "> Humanitarian Award</h6>
+                                        <p class="text-muted mb-0 text-secondary">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit.
+                                            Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in
+                                            faucibus.</p>
+                                    </li>
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <p class="text-primary mb-1">March 2011</p>
+                                        <h6 class=" fw-bold mb-1 ">Certificate for International Volunteer Service</h6>
+                                        <p class="text-muted mb-0 text-secondary">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit.
+                                            Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in
+                                            faucibus.</p>
+                                    </li>
+
+                                    <li class="mb-4 position-relative ps-5">
+                                        <span
+                                            class="timeline-dot bg-primary-subtle border border-3 border-primary"></span>
+                                        <p class="text-primary mb-1">May 2008</p>
+                                        <h6 class=" fw-bold mb-1 ">The Dental Professional of The Year Award</h6>
+                                        <p class="text-muted mb-0 text-secondary">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit.
+                                            Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in
+                                            faucibus.</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h5 class="mt-5 mb-4 ">Services</h5>
+                                    <div class="row gy-3">
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class="text-secondary">Tooth cleaning </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class="text-secondary">Root Canal Therapy</span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Implants </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Composite Bonding </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Fissure Sealants </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Surgical Extractions</span>
+                                        </div>
+
+
+                                    </div>
+                                    <h5 class="mt-5 mb-4 ">Specializations</h5>
+                                    <div class="row gy-3">
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class="text-secondary">Children Care </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class="text-secondary">Dental Care</span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Oral and Maxillofacial Surgery </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Orthodontist</span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Periodontist </span>
+                                        </div>
+                                        <div class="col-6 col-md-4">
+                                            <i class="fa-solid fa-right-long ccc"></i>
+                                            <span class=" text-secondary">Prosthodontics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Locations-->
+                    <div class="tab-pane fade" id="pills-Locations" role="tabpanel"
+                        aria-labelledby="pills-Locations-tab" tabindex="0">
+                        <div class="row ">
+                            <div class="col-12 col-md-6  ">
+                                <h6 class="h-hover">Smile Cute Dental Care Center</h6>
+                                <p class="text-secondary">MDS - Periodontology and Oral Implantology, BDS</p>
+                                <div class="mt-1 mb-2">
+                                    <i class="fas fa-star filled text-warning"></i>
+                                    <i class="fas fa-star filled text-warning"></i>
+                                    <i class="fas fa-star filled text-warning"></i>
+                                    <i class="fas fa-star filled text-warning"></i>
+                                    <i class="fas fa-star filled" style="color: rgb(189,199,208);"></i>
+                                    <span class="text-secondary-subtle">(4)</span>
+                                </div>
+                                <i class="text-secondary fas fa-map-marker-alt mb-2"></i>
+                                <span> 2286 Sundown Lane, Austin, Texas 78749, USA </span>
+                                <p class="text-primary">Get Directions</p>
+                                <!-- images -->
+                                <div class="d-flex w-50 ">
+                                    <img class="ms-2 rounded-2" src="images/profile-06.jpg"
+                                        style="width:50px; height:30px;" alt="">
+                                    <img class="ms-2 rounded-2" src="images/patient1-DEWlLjfN.jpg"
+                                        style="width:50px; height:30px;" alt="">
+                                    <img class="ms-2 rounded-2" src="images/profile-06.jpg"
+                                        style="width:50px; height:30px;" alt="">
+                                    <img class="ms-2 rounded-2" src="images/doctor-thumb-02-Cbbh6L4C.jpg"
+                                        style="width:50px; height:30px;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 ">
+                                <h6 class="fw-bold"> Mon - Sat </h6>
+                                <p class="text-secondary mb-0">10:00 AM - 2:00 PM</p>
+                                <p class="text-secondary mb-5">4:00 PM - 9:00 PM</p>
+                                <h6 class="fw-bold"> Sun</h6>
+                                <p class="text-secondary">10:00 AM - 2:00 PM</p>
+                            </div>
+                            <div class="col-12 col-md-3 ">
+                                <h5 class=" ms-5 ps-5">$250</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reviews-->
+                    <div class=" tab-pane fade" id="pills-Reviews" role="tabpanel" aria-labelledby="pills-Reviews-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex ">
+                                    <div><img class="ms-2 rounded-circle" src="images/profile-06.jpg"
+                                            style="width:30px; height:30px;" alt=""></div>
+                                    <div>
+                                        <h6 class=" ms-3 fw-bold">Richard Wilson</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="ms-5">
+                                        <p> Reviewed 2 Days ago</p>
+                                    </div>
+                                    <div class="mt-1 mb-2" style="margin-left: 73%;">
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled" style="color: rgb(189,199,208);"></i>
+
+                                    </div>
+                                </div>
+
+                                <i class="fa-regular fa-thumbs-up text-primary ms-5"><span> I recommend the
+                                        doctor</span></i>
+                                <p class="ms-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation.
+                                    Curabitur non nulla sit amet nisl tempus</p>
+                                <div class="d-flex ms-5">
+                                    <div class="">
+                                        <i class="fas fa-reply text-primary"></i>
+                                        <span class="text-primary"> Reply</span>
+                                    </div>
+                                    <div class="d-flex" style="margin-left: 75%;">
+                                        <div>
+                                            <p>Recommend?</p>
+                                        </div>
+                                        <div class=" like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-up text-secondary "></i>
+                                            <span class="h-t-w text-secondary ms-1 ">Yes</span>
+                                        </div>
+                                        <div class=" dis-like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-down text-secondary "></i>
+                                            <span class=" h-t-w text-secondary ms-1">No</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-bottom">
+                            <div class="col-12 ms-5 mt-4">
+                                <div class="d-flex ">
+                                    <div><img class="ms-2 rounded-circle" src="images/patient1-DEWlLjfN.jpg"
+                                            style="width:27px; height:27px;" alt=""></div>
+                                    <div>
+                                        <h6 class=" ms-3 fw-bold">Charlene Reed</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="ms-5">
+                                        <p> Reviewed 3 Days ago</p>
+                                    </div>
+                                    <div class="mt-1 mb-2" style="margin-left: 68%;">
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled" style="color: rgb(189,199,208);"></i>
+
+                                    </div>
+                                </div>
+                                <p class="ms-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation.
+                                    Curabitur non nulla sit amet nisl tempus</p>
+                                <div class="d-flex">
+                                    <div class="ms-5">
+                                        <i class="fas fa-reply text-primary"></i>
+                                        <span class="text-primary"> Reply</span>
+                                    </div>
+                                    <div class="d-flex" style="margin-left: 70%;">
+                                        <div>
+                                            <p>Recommend?</p>
+                                        </div>
+                                        <div class=" like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-up text-secondary "></i>
+                                            <span class="h-t-w text-secondary ms-1 ">Yes</span>
+                                        </div>
+                                        <div class=" dis-like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-down text-secondary "></i>
+                                            <span class=" h-t-w text-secondary ms-1">No</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="d-flex ">
+                                    <div><img class="ms-2 rounded-circle" src="images/patient2-DalkAckJ.jpg"
+                                            style="width:30px; height:30px;" alt=""></div>
+                                    <div>
+                                        <h6 class=" ms-3 fw-bold">Richard Wilson</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="ms-5">
+                                        <p> Reviewed 2 Days ago</p>
+                                    </div>
+                                    <div class="mt-1 mb-2" style="margin-left: 73%;">
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled text-warning"></i>
+                                        <i class="fas fa-star filled" style="color: rgb(189,199,208);"></i>
+
+                                    </div>
+                                </div>
+
+                                <i class="fa-regular fa-thumbs-up text-primary ms-5"><span> I recommend the
+                                        doctor</span></i>
+                                <p class="ms-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation.
+                                    Curabitur non nulla sit amet nisl tempus</p>
+                                <div class="d-flex ms-5">
+                                    <div class="">
+                                        <i class="fas fa-reply text-primary"></i>
+                                        <span class="text-primary"> Reply</span>
+                                    </div>
+                                    <div class="d-flex" style="margin-left: 75%;">
+                                        <div>
+                                            <p>Recommend?</p>
+                                        </div>
+                                        <div class=" like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-up text-secondary "></i>
+                                            <span class="h-t-w text-secondary ms-1 ">Yes</span>
+                                        </div>
+                                        <div class=" dis-like-hover border rounded-2 d-flex align-items-center justify-content-center px-2 ms-2 fs-sm"
+                                            style="height: 33px;">
+                                            <i class=" h-t-w fa-regular fa-thumbs-down text-secondary "></i>
+                                            <span class=" h-t-w text-secondary ms-1">No</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-3" style="margin-left:36% ;">
+                            <button class="btn  btn-info-gradient text-white rounded-5 fs-5  px-md-5 py-md-2 m-5 mt-3 "
+                                type="submit">Show all feedback (167)</button>
+                        </div>
+                    </div>
+                    <!-- Business-->
+                    <div class="tab-pane fade" id="pills-Business" role="tabpanel" aria-labelledby="pills-Business-tab"
+                        tabindex="0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-6 mt-3 border bg-light align-items-center justify-content-center"
+                                style="margin-left: 25%;">
+                                <div class="border-bottom w-100">
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <div>
+                                            <h6 class="fw-bold">Today</h6>
+                                        </div>
+                                        <div class="bg-success-subtle rounded-3 ps-2 pe-2 " style=" height:20px;">
+                                            <p class="text-success" style="font-size:smaller;">Open Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="text-secondary ">5 Nov 2019</span>
+                                        <span class="text-secondary " style="margin-left: 60%;">07:00 AM - 09:00
+                                            PM</span>
+                                    </div>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Monday</h6>
+                                    <span class="text-secondary " style="margin-left: 64%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Tuesday</h6>
+                                    <span class="text-secondary " style="margin-left: 64%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Wednesday</h6>
+                                    <span class="text-secondary " style="margin-left: 60%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Thursday</h6>
+                                    <span class="text-secondary " style="margin-left: 63%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Friday</h6>
+                                    <span class="text-secondary " style="margin-left: 66%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Saturday</h6>
+                                    <span class="text-secondary " style="margin-left: 63%;">07:00 AM - 09:00 PM</span>
+                                </div>
+                                <div class=" mt-4 d-flex">
+                                    <h6 class="fw-bold">Sunday</h6>
+                                    <div class="bg-danger-subtle rounded-3 ps-2 pe-2 "
+                                        style=" height:20px;margin-left: 77%;">
+                                        <p class="text-danger" style="font-size:smaller;">Close</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer ///////////////////////??????-->
+    <section class="footer mt-5 bg-p2 pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row">
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Careers</li>
+                        <li>Locations</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Treatments</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>Dental</li>
+                        <li>Cardiac</li>
+                        <li>Spinal Cord</li>
+                        <li>Hair Growth</li>
+                        <li>Anemia & Disorder</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Specialities</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>Transplant</li>
+                        <li>Cardiologist</li>
+                        <li>Oncology </li>
+                        <li>Pediatrics </li>
+                        <li>Gynacology </li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Utilites</h6>
+                    <ul class=" list-unstyled text-secondary ">
+                        <li>Pricing</li>
+                        <li>Contact</li>
+                        <li> Request A Quote</li>
+                        <li>Premium Membership</li>
+                        <li>Integrations</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-4 ">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p>Subscribe & Stay Updated from the Doccure</p>
+                    <form>
+                        <div class="position-relative">
+                            <input class="form-control p-2 " placeholder="Enter Email Address" type="email">
+                            <div class="position-absolute top-0 end-0">
+                                <button class="btn bg-primary text-white p-2 " type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- icons -->
+                    <h5 class="fw-bold mt-4 ">Connect With Us</h5>
+                    <div class="d-flex mt-3 " style=" gap: 15px;">
+                        <div
+                            class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-facebook position-absolute icon-footer"></i>
+                        </div>
+                        <div
+                            class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-x-twitter position-absolute icon-footer"></i>
+                        </div>
+                        <div
+                            class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-instagram position-absolute icon-footer"></i>
+                        </div>
+                        <div
+                            class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-linkedin position-absolute icon-footer"></i>
+                        </div>
+                        <div
+                            class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-pinterest position-absolute icon-footer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary-subtle pt-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12  col-md-4">
+                    <h6 class="text-secondary">Copyright © 2025 Doccure. All Rights Reserved</h6>
+                </div>
+                <div class="col-12  col-md-4">
+                    <ul class="d-flex">
+                        <p class="">Legal Notice</p>
+                        <li class="ms-4 li-c ">Privacy Policy</li>
+                        <li class="ms-4 li-c">Refund Policy</li>
+                    </ul>
+                </div>
+                <div class=" d-flex col-12  col-md-3 ms-5">
+                    <div><img class="ms-2" src="images/card-01.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-02.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-03.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-04.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-05.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-06.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

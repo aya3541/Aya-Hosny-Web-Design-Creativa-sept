@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>profile-dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <section class="banner mb-5 bg-p2 ">
+        <div class="container  position-relative ">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 fixed-top">
+                <div class="container">
+                    <!-- logo -->
+                    <a class="navbar-brand fw-bold fs-4" href="#">
+                        <img src="images/logo.svg" class="img-fluid" style="max-width: 120px;" alt="">
+                    </a>
+                    <button class="navbar-toggler border-0 text-info" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="w-50" src="images/logo.svg" alt=""> </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                    <!-- dropdown -->
+                        <ul class="navbar-nav col-5 mb-2 ms-5 text-c">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-info" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                                <div class="dropdown-menu home-dropdown bg-primary p-3">
+                                    <div class="row d-flex flex-wrap align-items-start" style="row-gap: 5px;">
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home </h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-01.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 1</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-02.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 2</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-03.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 3</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-04.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 4</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-05.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 5</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-06.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 6</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-07.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 7</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-08.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 8</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-09.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 9</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-10.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 10</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-11 .jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 11</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-12.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 12</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-13.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 13</h6>
+                                        </div>
+
+                                        <div class="col-md-2 d-flex flex-column align-items-center">
+                                        <img class="w-100 rounded-3 d-block" src="images/home-14.jpg" alt="">
+                                        <h6 class="text-white mt-2 mb-0">General Home 14</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Doctors
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="P.dashboard.html" target="_blank">Doctor Dashboard</a></li>
+                                    <li><a class="dropdown-item border-bottom " href="#">Available Timing</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="#">Patients List</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="#">Patients Profile</a></li>
+                                    <li><a class="dropdown-item  border-bottom" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="P.setting.html"target="_blank">Profile Setting</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Review</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Doctor Register</a></li>
+                                    <li><a class="dropdown-item " href="#">Blog </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Patients
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="P.dashboard.html"  target="_blank">Patient Dashboard</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="D.profil.html"  target="_blank">Doctor Profile</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="P.setting.html"  target="_blank">Profile Setting</a></li>
+                                    <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pharmacy
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="#">Patient Dashboard</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="D.profil.html"  target="_blank">Doctor Profile</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Profile Setting</a></li>
+                                    <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="#">Patient Dashboard</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Doctors </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Search Doctor</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="D.profil.html"  target="_blank">Doctor Profile</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#"> Checkout</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Booking Success</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Favourites </a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Profile Setting</a></li>
+                                    <li><a class="dropdown-item " href="#">Change Password </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="#">Blog List</a></li>
+                                    <li><a class="dropdown-item border-bottom" href="#">Blog Grid</a></li>
+                                    <li><a class="dropdown-item " href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item border-bottom" href="#">Admin</a></li>
+                                    <li><a class="dropdown-item " href="#"> Pharmacy Admin </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <!-- icons -->
+                    <div class=" icons-wrapper d-flex gap-2 ">
+                        <div class=" align-items-center justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </div>
+                        <div class="profil-icon d-flex align-items-center justify-content-center ">
+                            <i class="fa-regular fa-sun text-secondary "></i>
+                        </div>
+                        <div class="profil-icon d-flex align-items-center justify-content-center  position-relative ">
+                            <i class="fa-regular fa-bell text-secondary"></i>
+                            <div class="position-absolute bg-danger top-0 start-100  translate-middle p-1 border border-light rounded-circle"> </div>
+                        </div>
+                        <div class="profil-icon  d-flex align-items-center justify-content-center  position-relative">
+                            <i class="fa-regular fa-comment-dots text-secondary"></i>
+                            <div class="position-absolute bg-success top-0 start-100  translate-middle p-1 border border-light rounded-circle"> </div>
+                        </div>
+                        <div class="profil-icon  d-flex align-items-center justify-content-center  position-relative">
+                            <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                            <div class="position-absolute bg-primary top-0 start-100  translate-middle p-1 border border-light rounded-circle"> </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center overflow-hidden " style="width: 30px;height:30;border-radius:50%;">
+                            <img class="w-100" src="images/profile-06.jpg" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="  p-5 ">
+                <div class="d-flex align-items-center justify-content-center mt-3 mb-5">
+                    <div >
+                        <i class="fa-solid fa-house text-info"></i>
+                    </div>
+                    <div class="ms-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="ms-3"><h5>Patient</h5></div>
+                    <div class="ms-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="ms-3"><h5>Dashboard</h5></div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h2 class="fw-bold fs-1">Dashboard</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dr.Darren -->
+    <section >
+        <div class="container ">
+            <div class="row ">
+                <!-- aside -->
+                <div class="col-12 col-md-3">
+                    <div class="rounded-3 border shadow-sm text-center position-relative p-2">
+                        <div class="bg-p rounded-top-3 py-3 position-relative" style="height: 133px;">
+                            <div class="position-absolute  position-relative rounded-circle  border border-white"
+                                style="bottom: -25px; left: 50%; transform: translateX(-50%); width: 90px; height: 90px;">
+                            <img class="w-100 h-100 rounded-circle " src="images/doctor-thumb-02-Cbbh6L4C.jpg" alt="Doctor">
+                            <div class="position-absolute bg-success rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width:13px; height:13px; top:73px; right:14px; ">
+                                    <i class="fa-solid fa-check text-white" style="font-size: 5px;"></i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h5 class=" h-hover fw-bold">Dr Edalin Hendry</h5>
+                            <p class="text-secondary ">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                            <div class="d-flex align-items-center rounded-2 border px-2 py-1 ps-3" style="width: 93px; margin-left:90px;">
+                                <i class="fa-solid fa-circle text-primary me-2" style="font-size: 6px;"></i>
+                                <span class="text-dark" style="font-size: 12px;">Dentist</span>
+                            </div>
+                            <div class="mb-3 mt-5 bg-info-subtle pb-3">
+                                <label for="status ms-0" class="form-label">
+                                    Availability<span class="text-danger">*</span>
+                                </label>
+                                <select id="status" name="status" class="form-select" required>
+                                    <option value="I am Available Nowavailable" >I am Available Nowavailable</option>
+                                    <option value="unavailable">Not Available</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <a href=""  class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-border-all  ms-3 "></i>
+                                    <span class="ms-3 ">Dashboard</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3 ">
+                                    <i class="fa-solid fa-clipboard-check  ms-3 "></i>
+                                    <span class="ms-3 ">Requests</span>
+                                    <span class="rounded-circle bg-warning  text-white"
+                                    style="height: 15px;width: 15px;font-size: 10px; padding-top:1px; margin-left:125px;">4</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3 ">
+                                    <i class="fa-solid fa-calendar-days  ms-3 "></i>
+                                    <span class="ms-3 ">Appointments</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3 ">
+                                    <i class="fa-solid fa-calendar-check  ms-3 "></i>
+                                    <span class="ms-3 ">Available Timings</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3 ">
+                                    <i class="fa-solid fa-user-injured ms-3 "></i>
+                                    <span class="ms-3 ">My Patients</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3 ">
+                                    <i class="fa-regular fa-clock ms-3 "></i>
+                                    <span class="ms-3 ">Specialties & Services</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-regular fa-star  ms-3 "></i>
+                                    <span class="ms-3 ">Reviews</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-user-check ms-3 "></i>
+                                    <span class="ms-3 ">Accounts</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-file-lines  ms-3 "></i>
+                                    <span class="ms-3 ">Invoices</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-money-bill-1  ms-3 "></i>
+                                    <span class="ms-3 ">Payout Settings</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-regular fa-comments  ms-3 "></i>
+                                    <span class="ms-3 me-5 ">Message</span>
+                                    <span class="rounded-circle bg-warning text-white"
+                                    style="height: 15px;width: 15px;font-size: 10px; padding-top:1px;margin-left:95px;">7</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-gear  ms-3 "></i>
+                                    <span class="ms-3 ">Profile Settings</span>
+                                    
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-shield-halved  ms-3 "></i>
+                                    <span class="ms-3 ">Social Media</span>
+                                </a>
+                                <a href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-key  ms-3 "></i>
+                                    <span class="ms-3 ">Change Password</span>
+                                </a>
+                                <a  href="" class="d-flex h-hover h-hover-bg mb-3">
+                                    <i class="fa-solid fa-right-from-bracket  ms-3 "></i>
+                                    <span class="ms-3 ">Logout</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dashboard -->
+                <div class="col-12 col-md-9">
+                    <div class=" row">
+                        <!-- 3cards -->
+                        <div class="col-12 col-md-4 " >
+                            <div>
+                                <div class=" rounded-3 shadow d-flex p-4 border mb-4 ">
+                                    <div class=" ps-2">
+                                        <h6 >Total Patient</h6>
+                                        <h3 class="fw-bold">978</h3>
+                                        <span class="text-success" style="font-size: 14px;">
+                                            <i class="fa-solid fa-arrow-up text-success me-2 "></i>15% From Last Week
+                                        </span>
+                                    </div>
+                                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center rounded-3 ms-2" style="width: 60px; height:60px">
+                                        <i class="fa-solid fa-user-injured  fs-1" ></i>
+                                    </div>
+                                </div>
+                                <div class=" rounded-3 shadow d-flex p-4 border mb-4  ">
+                                    <div class=" ps-2">
+                                        <h6 >Patients Today </h6>
+                                        <h3 class="fw-bold">80</h3>
+                                        <span class="text-danger" style="font-size: 14px;">
+                                            <i class="fa-solid fa-arrow-up text-danger me-2"></i>15% From Yesterday
+                                        </span>
+                                    </div>
+                                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center rounded-3 ms-4" style="width: 60px; height:60px">
+                                        <i class="fa-solid fa-user-clock fs-1" ></i>
+                                    </div>
+                                </div>
+                                <div class=" rounded-3 shadow d-flex p-4 border mb-4 ">
+                                    <div class=" ps-2">
+                                        <h6 >Appointments Today</h6>
+                                        <h3 class="fw-bold">50</h3>
+                                        <span class="text-success"style="font-size: 14px;">
+                                            <i class="fa-solid fa-calendar-days text-success me-2"></i>20% From Yesterday
+                                        </span>
+                                    </div>
+                                    <div class="bg-secondary-subtle d-flex align-items-center justify-content-center rounded-3 ms-4" style="width: 60px; height:60px">
+                                        <i class="fa-solid fa-calendar-days fs-1" ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm-images -->
+                        <div class="col-12 col-md-8">
+                            <div class=" rounded-3 border " >
+                                <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                    <div><h5 class="fw-bold">Appointment</h5></div>
+                                    <div class="dropdown border">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Last 7 Days
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#"> Last 7 Days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row  p-2">
+                                    <div class=" col-5  ">
+                                        <div class="d-flex align-items-center justify-content-center pt-2 pb-2">
+                                            <div class="col-6" style="width: 60px;">
+                                                <img class="w-100  rounded-3"  src="images/profile-01-DT2Z6e8O.jpg" alt="">
+                                            </div>
+                                            <div class="col-6  ms-3 h-hover">
+                                                <p class="text-primary mb-0">#Apt0001</p>
+                                                <h6 class="fw-bold" style="font-size: 14px;">Adrian Marshall</h6>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                            <div class="col-6" style="width: 60px;">
+                                                <img class="w-100  rounded-3"  src="images/profile-02-CfwraHe7.jpg" alt="">
+                                            </div>
+                                            <div class="col-6  ms-3 h-hover">
+                                                <p class="text-primary mb-0">#Apt0002</p>
+                                                <h6 class="fw-bold" style="font-size: 14px;"> Kelly Stevens</h6>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                            <div class="col-6" style="width: 60px;">
+                                                <img class="w-100  rounded-3"  src="images/profile-03-ComJhJvI.jpg" alt="">
+                                            </div>
+                                            <div class="col-6  ms-3 h-hover">
+                                                <p class="text-primary mb-0">#Apt0003</p>
+                                                <h6 class="fw-bold" style="font-size: 14px;"> Samuel Anderson</h6>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                            <div class="col-6" style="width: 60px;">
+                                                <img class="w-100  rounded-3"  src="images/profile-04-CEtoD4p6.jpg" alt="">
+                                            </div>
+                                            <div class="col-6  ms-3 h-hover">
+                                                <p class="text-primary mb-0">#Apt0004</p>
+                                                <h6 class="fw-bold" style="font-size: 14px;">Catherine Griffin</h6>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                            <div class="col-6" style="width: 60px;">
+                                                <img class="w-100  rounded-3"  src="images/profile-05-C4xc7dns.jpg" alt="">
+                                            </div>
+                                            <div class="col-6  ms-3 h-hover">
+                                                <p class="text-primary mb-0">#Apt0005</p>
+                                                <h6 class="fw-bold" style="font-size: 13px;">Robert Hutchinson</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 pt-2">
+                                        <div class="mb-4">
+                                            <h6> 11 Nov 2025 10.45 AM</h6>
+                                            <div class="bg-primary rounded-3" style="width:70px">
+                                                <span class="text-white ms-1" style="font-size: 14px;">General</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h6> 10 Nov 2025 11.00 AM</h6>
+                                            <div class="bg-primary rounded-3" style="width:111px">
+                                                <span class="text-white ms-1" style="font-size: 14px;">Clinic Consulting</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h6> 03 Nov 2025 02.00 PM</h6>
+                                            <div class="bg-primary rounded-3" style="width:70px">
+                                                <span class="text-white ms-1" style="font-size: 14px;">General</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h6> 01 Nov 2025 04.00 PM</h6>
+                                            <div class="bg-primary rounded-3" style="width:111px" >
+                                                <span class="text-white ms-1" style="font-size: 14px;">Clinic Consulting</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4" >
+                                            <h6> 28 Oct 2025 05.30 PM</h6>
+                                            <div class="bg-primary rounded-3" style="width:70px">
+                                                <span class="text-white ms-1" style="font-size: 14px;">General</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-4   ">
+                                        <div class="d-flex pb-5" >
+                                            <div class="border border-success d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-check text-success" ></i>
+                                            </div>
+                                            <div class="border border-danger d-flex align-items-center justify-content-center  ms-2 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-xmark text-danger" ></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex pb-5 " >
+                                            <div class="border border-success d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-check text-success" ></i>
+                                            </div>
+                                            <div class="border border-danger d-flex align-items-center justify-content-center  ms-2 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-xmark text-danger" ></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex pb-5 " >
+                                            <div class="border border-success d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-check text-success" ></i>
+                                            </div>
+                                            <div class="border border-danger d-flex align-items-center justify-content-center  ms-2 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-xmark text-danger" ></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex pb-5 " >
+                                            <div class="border border-success d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-check text-success" ></i>
+                                            </div>
+                                            <div class="border border-danger d-flex align-items-center justify-content-center  ms-2 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-xmark text-danger" ></i>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex pb-5 " >
+                                            <div class="border border-success d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-check text-success" ></i>
+                                            </div>
+                                            <div class="border border-danger d-flex align-items-center justify-content-center  ms-2 "
+                                                style="height: 25px; width:25px; border-radius:50%">
+                                                <i class="fa-solid fa-xmark text-danger" ></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bar Chart -->
+                    <div class="row">
+                        <!-- bar Chart xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+                        <div class="col-12 col-md-5">
+                            <div class="border rounded-3 p-5 pt-4 mb-3 ">
+                                <div class="d-flex justify-content-between align-items-center mb-3 mt-3 p-2">
+                                    <h5 class="fw-bold mb-0">Weekly Overview</h5>
+                                    <span class="text-muted small">Mar 14 - Mar 21</span>
+                                </div>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item " role="presentation">
+                                        <button class="nav-link active" id="revenue-tab" data-bs-toggle="tab" data-bs-target="#revenue" type="button">Revenue</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="appointments-tab" data-bs-toggle="tab" data-bs-target="#appointments" type="button">Appointments</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane show active" id="revenue" role="tabpanel" aria-labelledby="revenue-tab">
+                                        <canvas id="myChart" style="width:100%;max-width:600px;"></canvas>
+                                    </div>
+                                    <div class="tab-pane fade" id="appointments" role="tabpanel" aria-labelledby="appointments-tab">
+                                        <canvas id="appointmentsChart" style="width:100%;max-width:600px;"></canvas>
+                                    </div>
+                                </div>
+                                <script>
+                                    let xValues = ["M", "T", "W", "T", "F", "S", "S"];
+                                    let barColors = ["#0d6efd", "#0d6efd","#0d6efd","#0d6efd","#0d6efd","#0d6efd","#0d6efd"];
+
+                                    function createChart(canvasId, yValues, yMax, stepSize) {
+                                    new Chart(canvasId, {
+                                        type: "bar",
+                                        data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                            backgroundColor: barColors,
+                                            borderRadius: 10,
+                                            data: yValues
+                                        }]
+                                        },
+                                        options: {
+                                        plugins: {
+                                            legend: { display: false },
+                                            title: { display: false },
+                                            tooltip: { enabled: false }
+                                        },
+                                        scales: {
+                                            y: {
+                                            beginAtZero: true,
+                                            max: yMax,
+                                            ticks: { stepSize: stepSize }
+                                            },
+                                            x: {
+                                            grid: {
+                                                display: false,
+                                                drawBorder: false}
+                                            }
+                                        }
+                                        }
+                                    });
+                                    }
+
+                                    createChart("myChart", [45, 40, 10, 43, 27, 44, 63], 80, 20);
+
+                                    createChart("appointmentsChart", [40, 20, 30, 60, 90, 40, 110], 120, 20);
+                                </script>
+                            </div>
+                            <!-- 2-images -->
+                            <div class="mb-4 mt-5 ">
+                                <div class=" rounded-3 border p-2 " >
+                                    <!-- title -->
+                                    <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                        <div><h5 class="fw-bold">Recent Patients</h5></div>
+                                        <div class="a-h">
+                                            <a href="">View All</a>
+                                        </div>
+                                    </div>
+                                    <!-- 2-images -->
+                                    <div class="row mt-3 mb-3">
+                                        <div class="col-6 ">
+                                            <div class=" bg-light p-3  rounded-3 ms-3">
+                                                <div class=" mb-3 ms-2"style="width: 60px;" >
+                                                    <img class="w-100 rounded-3"  src="images/profile-01-DT2Z6e8O.jpg" alt="">
+                                                </div>
+                                                <div class="  h-hover border-bottom">
+                                                    <h6 class="fw-bold mb-1" style="font-size: 14px;">Adrian Marshall</h6>
+                                                    <span class="text-primary mb-2 " style="font-size: 12px;">Patient ID : P0001</span>
+                                                </div>
+                                                <p class="mt-2"style="font-size: 13px;">Last Appointment 15 Mar 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 ">
+                                            <div class=" bg-light p-3  rounded-3 me-2">
+                                                <div class=" mb-3 ms-2"style="width: 60px;" >
+                                                    <img class="w-100 rounded-3"  src="images/profile-02-CfwraHe7.jpg" alt="">
+                                                </div>
+                                                <div class="  h-hover border-bottom">
+                                                    <h6 class="fw-bold mb-1" style="font-size: 14px;">Kelly Stevens</h6>
+                                                    <span class="text-primary mb-2 " style="font-size: 12px;">Patient ID : P0002</span>
+                                                </div>
+                                                <p class="mt-2"style="font-size: 13px;">Last Appointment 13 Mar 2025</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bg-primary-->
+                        <div class="col-12 col-md-7">
+                            <div class=" text-white border rounded-3 bg-primary p-3">
+                                <h5 class="mt-3 ">Upcoming Appointment</h5>
+                                <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                    <div class="d-flex align-items-center justify-content-center pt-2 pb-2">
+                                        <div class="" style="width: 60px;">
+                                            <img class="w-100  rounded-3"  src="images/profile-01-DT2Z6e8O.jpg" alt="">
+                                        </div>
+                                        <div class=" ms-3 h-hover">
+                                            <p class=" mb-0">#Apt0001</p>
+                                            <h6 class="fw-bold" style="font-size: 14px;">Adrian Marshall</h6>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h6>General visit</h6>
+                                        <h6>Today, 10:45 AM</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between  mt-3 ps-2">
+                                    <div class="">
+                                        <i class="fa-solid fa-video "></i>
+                                        <span class="ms-1">Video Appointment</span>
+                                    </div>
+                                    <div class="">
+                                        <button class="btn-h rounded-5 border " >Chat Now</button>
+                                        <button class="btn-h rounded-5 border ms-2" >Start Appointment</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- sm-images-2 -->
+                            <div class="mb-4 mt-4">
+                                <div class=" rounded-3 border " >
+                                    <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                        <div><h5 class="fw-bold">Recent Invoices</h5></div>
+                                        <div class="a-h">Recent Patients
+                                            <a href="">View All</a>
+                                        </div>
+                                    </div>
+                                    <div class="row  p-2">
+                                        <div class=" col-4  ">
+                                            <div class="d-flex align-items-center justify-content-center pt-2 pb-2">
+                                                <div class="col-6" style="width: 60px;">
+                                                    <img class="w-100  rounded-3"  src="images/profile-01-DT2Z6e8O.jpg" alt="">
+                                                </div>
+                                                <div class="col-6  ms-3 h-hover">
+                                                    <h6 class="fw-bold" style="font-size: 14px;">Adrian</h6>
+                                                    <p class="text-primary mb-0">#Apt0001</p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                                <div class="col-6" style="width: 60px;">
+                                                    <img class="w-100  rounded-3"  src="images/profile-02-CfwraHe7.jpg" alt="">
+                                                </div>
+                                                <div class="col-6  ms-3 h-hover">
+                                                    <h6 class="fw-bold" style="font-size: 14px;"> Kelly </h6>
+                                                    <p class="text-primary mb-0">#Apt0002</p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                                <div class="col-6" style="width: 60px;">
+                                                    <img class="w-100  rounded-3"  src="images/profile-03-ComJhJvI.jpg" alt="">
+                                                </div>
+                                                <div class="col-6  ms-3 h-hover">
+                                                    <h6 class="fw-bold" style="font-size: 14px;"> Samuel</h6>
+                                                    <p class="text-primary mb-0">#Apt0003</p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                                <div class="col-6" style="width: 60px;">
+                                                    <img class="w-100  rounded-3"  src="images/profile-04-CEtoD4p6.jpg" alt="">
+                                                </div>
+                                                <div class="col-6  ms-3 h-hover">
+                                                    <h6 class="fw-bold" style="font-size: 14px;">Catherine</h6>
+                                                    <p class="text-primary mb-0">#Apt0004</p>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center pt-2 pb-2" >
+                                                <div class="col-6" style="width: 60px;">
+                                                    <img class="w-100  rounded-3"  src="images/profile-05-C4xc7dns.jpg" alt="">
+                                                </div>
+                                                <div class="col-6  ms-3 h-hover">
+                                                    <h6 class="fw-bold" style="font-size: 13px;">Robert </h6>
+                                                    <p class="text-primary mb-0">#Apt0005</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 pt-2 mt-2" style="font-size: 13px;">
+                                            <div class="mb-4">
+                                                <p class="text-secondary mb-1">Amount</p>
+                                                <h6 > $450</h6>
+                                            </div>
+                                            <div class="mb-5 ">
+                                                <p class="text-secondary mb-1">Paid On</p>
+                                                <h6> 10 Nov 2025 </h6>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="text-secondary mb-1">Paid On</p>
+                                                <h6> 03 Nov 2025 </h6>
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="text-secondary mb-1">Paid On</p>
+                                                <h6> 01 Nov 2025</h6>
+                                            </div>
+                                            <div class="mb-4" >
+                                                <p class="text-secondary mb-1">Paid On</p>
+                                                <h6> 28 Oct 2025</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 pt-2 mt-2" style="font-size: 13px;">
+                                            <div class="mb-4 ">
+                                                <p class="text-secondary mb-1">Paid On</p>
+                                                <h6> 11 Nov 2025 </h6>
+                                            </div>
+                                            <div class="mb-5 ">
+                                                <p class="text-secondary mb-1"> Amount</p>
+                                                <h6> $500</h6>
+                                            </div>
+                                            <div class="mb-4 ">
+                                                <p class="text-secondary mb-1"> Amount</p>
+                                                <h6> $320</h6>
+                                            </div>
+                                            <div class="mb-4 ">
+                                                <p class="text-secondary mb-1"> Amount</p>
+                                                <h6> $240</h6>
+                                            </div>
+                                            <div class="mb-4 ">
+                                                <p class="text-secondary mb-1"> Amount</p>
+                                                <h6> $380</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pt-4   ">
+                                            <div class="bg-secondary-subtle mb-5 d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 30px; width:30px; border-radius:50%">
+                                                <i class="fa-solid fa-eye" ></i>
+                                            </div>
+                                            <div class="bg-secondary-subtle mb-5 d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 30px; width:30px; border-radius:50%">
+                                                <i class="fa-solid fa-eye" ></i>
+                                            </div>
+                                            <div class="bg-secondary-subtle mb-5 d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 30px; width:30px; border-radius:50%">
+                                                <i class="fa-solid fa-eye" ></i>
+                                            </div>
+                                            <div class="bg-secondary-subtle mb-5 d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 30px; width:30px; border-radius:50%">
+                                                <i class="fa-solid fa-eye" ></i>
+                                            </div>
+                                            <div class="bg-secondary-subtle mb-4 d-flex align-items-center justify-content-center  ms-4 "
+                                                style="height: 30px; width:30px; border-radius:50%">
+                                                <i class="fa-solid fa-eye" ></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-7">
+                            <div class="mb-4 mt-3">
+                                <div class=" rounded-3 border " >
+                                    <!-- title -->
+                                    <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                        <div><h5 class="fw-bold">Notifications</h5></div>
+                                        <div class="a-h">
+                                            <a href="">View All</a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="d-flex bg-hover-d ms-4" >
+                                            <div class="bg-secondary-subtle rounded-3 d-flex align-items-center justify-content-center "
+                                                style="height: 50px;width: 50px;">
+                                                <i class="fa-solid fa-bell" style="color: blueviolet;"></i>
+                                            </div>
+                                            <div class="ms-3 pt-2" >
+                                                <h6 class="h-hover">Booking Confirmed on  <span class="fw-bold"> Mar 2025 </span> 10:30 AM</h6>
+                                                <p>Just Now</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex bg-hover-d ms-4 ">
+                                            <div class="bg-secondary-subtle rounded-3 d-flex align-items-center justify-content-center "
+                                                style="height: 50px;width: 50px;">
+                                                <i class="fa-solid fa-star" style="color: rgb(60, 110, 229);"></i>
+                                            </div>
+                                            <div class="ms-3 pt-2" >
+                                                <h6 class="h-hover">You have a  <span class="fw-bold"> New </span>  Review for your Appointment</h6>
+                                                <p>5 Days ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex bg-hover-d ms-4 ">
+                                            <div class="bg-secondary-subtle rounded-3 d-flex align-items-center justify-content-center "
+                                                style="height: 50px;width: 50px;">
+                                                <i class="fa-solid fa-calendar-check" style="color: red;"></i>
+                                            </div>
+                                            <div class="ms-3 pt-2" >
+                                                <h6 class="h-hover">You have Appointment with  <span class="fw-bold">  Ahmed </span>  by 01:20 PM</h6>
+                                                <p>12:55 PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex bg-hover-d ms-4">
+                                            <div class="bg-secondary-subtle rounded-3 d-flex align-items-center justify-content-center "
+                                                style="height: 50px;width: 50px;">
+                                                <i class="fa-solid fa-money-bill-1-wave" style="color: rgb(243, 188, 23);"></i>
+                                            </div>
+                                            <div class="ms-3 pt-2" >
+                                                <h6 class="h-hover">Sent an amount of  <span class="fw-bold"> $200 </span> for an Appointment by 01:20 PM</h6>
+                                                <p>2 Days ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex bg-hover-d ms-4 ">
+                                            <div class="bg-secondary-subtle rounded-3 d-flex align-items-center justify-content-center "
+                                                style="height: 50px;width: 50px;">
+                                                <i class="fa-solid fa-star" style="color: rgb(60, 110, 229);"></i>
+                                            </div>
+                                            <div class="ms-3 pt-2" >
+                                                <h6 class="h-hover">You have a  <span class="fw-bold"> New </span>  Review for your Appointment</h6>
+                                                <p>5 Days ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="mb-4 mt-3">
+                                <div class=" rounded-3 border " >
+                                    <div class=" d-flex align-items-center justify-content-between border-bottom p-3">
+                                        <h6>Clinics & Availability</h6>
+                                    </div>
+                                    <div class="bg-light rounded-3 m-2 mb-3 pb-3">
+                                        <div class="d-flex align-items-center justify-content-between mt-3">
+                                            <div class="d-flex">
+                                                <div class="ms-3" style="width: 50px;">
+                                                    <img class="w-100 rounded-3" src="images/clinic-02-Dk-Adecs.jpg" alt="">
+                                                </div>
+                                                <div class="ms-3 mt-3"><h6 class=" fw-bold">Sofi's Clinic</h6></div>
+                                            </div>
+                                            <div class="me-4" ><h6 class="fw-bold">$900</h6></div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between justify-content-center mt-3 bg-white ms-4 rounded-3 p-3" style="width: 85%;">
+                                            <div class=" ">
+                                                <h6 class="">Tue :<span class="text-secondary">07:00 AM - 09:00 PM</span></h6>
+                                                <h6 >Wed : <span class="text-secondary">07:00 AM - 09:00 PM</span></h6>
+                                            </div>
+                                            <div class="a-h-blue">
+                                                <a class="text-black " href="">Change </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bg-light rounded-3 m-2 mb-3 pb-3">
+                                        <div class="d-flex align-items-center justify-content-between mt-3">
+                                            <div class="d-flex">
+                                                <div class="ms-3" style="width: 50px;">
+                                                    <img class="w-100 rounded-3" src="images/clinic-01-DaCJn46U.jpg" alt="">
+                                                </div>
+                                                <div class="ms-3 mt-3"><h6 class=" fw-bold">The Family Dentistry Clinic</h6></div>
+                                            </div>
+                                            <div class="me-4" ><h6 class="fw-bold">$600</h6></div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between justify-content-center mt-3 bg-white ms-4 rounded-3 p-3" style="width: 85%;">
+                                            <div class=" ">
+                                                <h6 class="">Sat  :<span class="text-secondary">07:00 AM - 09:00 PM</span></h6>
+                                                <h6 >Tue : <span class="text-secondary">07:00 AM - 09:00 PM</span></h6>
+                                            </div>
+                                            <div class="a-h-blue">
+                                                <a class="text-black " href="">Change </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer ///////////////////////??????-->
+    <section class="footer mt-5 bg-p2 pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row">
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Careers</li>
+                        <li>Locations</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Treatments</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>Dental</li>
+                        <li>Cardiac</li>
+                        <li>Spinal Cord</li>
+                        <li>Hair Growth</li>
+                        <li>Anemia & Disorder</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Specialities</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li>Transplant</li>
+                        <li>Cardiologist</li>
+                        <li>Oncology </li>
+                        <li>Pediatrics </li>
+                        <li>Gynacology </li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-2">
+                    <h6 class="fw-bold mb-3 ">Utilites</h6>
+                    <ul class=" list-unstyled text-secondary ">
+                        <li>Pricing</li>
+                        <li>Contact</li>
+                        <li> Request A Quote</li>
+                        <li>Premium Membership</li>
+                        <li>Integrations</li>
+                    </ul>
+                </div>
+                <div class=" ul-m col-12 col-md-4 ">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p>Subscribe & Stay Updated from the Doccure</p>
+                    <form>
+                        <div class="position-relative" >
+                            <input class="form-control p-2 " placeholder="Enter Email Address" type="email">
+                            <div class="position-absolute top-0 end-0" >
+                            <button class="btn bg-primary text-white p-2 " type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- icons -->
+                    <h5 class="fw-bold mt-4 ">Connect With Us</h5>
+                    <div class="d-flex mt-3 "  style=" gap: 15px;">
+                        <div class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-facebook position-absolute icon-footer"></i>
+                        </div>
+                        <div class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-x-twitter position-absolute icon-footer"></i>
+                        </div>
+                        <div class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-instagram position-absolute icon-footer"></i>
+                        </div>
+                        <div class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-linkedin position-absolute icon-footer"></i>
+                        </div>
+                        <div class=" circle-icons-f position-relative d-flex align-items-center justify-content-center ">
+                            <i class="fa-brands fa-pinterest position-absolute icon-footer"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary-subtle pt-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12  col-md-4">
+                    <h6 class="text-secondary">Copyright © 2025 Doccure. All Rights Reserved</h6>
+                </div>
+                <div class="col-12  col-md-4">
+                    <ul class="d-flex">
+                        <p class="">Legal Notice</p>
+                        <li class="ms-4 li-c ">Privacy Policy</li>
+                        <li class="ms-4 li-c">Refund Policy</li>
+                    </ul>
+                </div>
+                <div class=" d-flex col-12  col-md-3 ms-5">
+                    <div><img class="ms-2" src="images/card-01.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-02.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-03.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-04.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-05.svg" alt=""></div>
+                    <div><img class="ms-2" src="images/card-06.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

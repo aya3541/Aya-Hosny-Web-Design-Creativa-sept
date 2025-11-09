@@ -1,0 +1,764 @@
+body {
+    padding-top: 70px;
+}
+
+* {
+    font-family: Inter var, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-p {
+    color: rgb(34, 149, 238) !important;
+}
+
+.bg-p2 {
+    background: linear-gradient(45deg, #ebf7ff, #c9e5f5, #e0f6fa);
+}
+
+.bg-p {
+    background: linear-gradient(45deg, #4049ce, #1593dc, #61d2e6);
+}
+
+.btn-info-gradient {
+    background: linear-gradient(45deg, #4049ce, #1593dc, #61d2e6);
+    border: none;
+
+}
+
+/* ------custom ----------------------*/
+/* ------banner----------------------*/
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.transform-div {
+    transform: translate(-50%, -50%);
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -70%);
+    }
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 33px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent rgb(250, 233, 233) transparent;
+}
+
+.home-dropdown {
+    width: 990px;
+    height: 990px;
+
+}
+
+.home-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    border: none;
+}
+
+.home-dropdown:hover {
+    display: flex;
+
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.img-banner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.div-img-banner {
+    width: 17%;
+}
+
+.btn-book {
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.fs-20 {
+    font-size: 15px;
+}
+
+.card img {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover img {
+    transform: rotateY(180deg);
+}
+
+.circle-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.c-1,
+.c-h1:hover {
+    background-color: #e5b8f3ef;
+}
+
+.c-2,
+.c-h2:hover {
+    background-color: #c7e4caef;
+}
+
+.c-3,
+.c-h3:hover {
+    background-color: #c7dcf2ef;
+}
+
+.c-4,
+.c-h4:hover {
+    background-color: #efb9b7ef;
+}
+
+.c-5,
+.c-h5:hover {
+    background-color: #90b093ef;
+}
+
+.c-6,
+.c-h6:hover {
+    background-color: #f7a7f6ef;
+}
+
+.c-7,
+.c-h7:hover {
+    background-color: #f6bfadef;
+}
+
+/* arrow ------------------------------------------*/
+.circle-arrow {
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-bottom: 55px;
+
+}
+
+.m-arrow {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+/* specialities ---------------------------------*/
+.c-blue {
+    background-color: #a4d7f7;
+
+}
+
+.circle-blue {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.card:hover .c-blue {
+    background-color: rgb(76, 117, 220);
+}
+
+.card:hover .img-w {
+    filter: brightness(0) invert(1);
+}
+
+/* Best Doctors -------------------------------------------------------*/
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    /* cursor: pointer; */
+    transition: transform 0.3s ease;
+}
+
+.card-hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.1s ease;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.card-hover:hover::after {
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.fs {
+    font-size: 11px;
+}
+
+.fs-s {
+    font-size: 5px;
+}
+
+/* Pricing Plan --------------------------------------------------------*/
+
+.icon-pri {
+    transition: transform 2s ease;
+}
+
+.card-pri-hover:hover .icon-pri {
+    transform: rotate(360deg);
+}
+
+
+.card-pri-hover:hover {
+    background: linear-gradient(45deg, #4049ce, #1593dc, #61d2e6) !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.card-pri-hover:hover .fa-check {
+    color: #0d6efd !important;
+}
+
+.card-pri-hover:hover * {
+    color: white !important;
+}
+
+.card-pri-hover:hover li span {
+    background-color: white !important;
+    border: 1px solid white;
+}
+
+.card-pri-hover:hover button {
+    background-image: none !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+/* latest Art------------------*/
+.card-hover-scale:hover {
+    transform: scale(5);
+
+
+}
+
+.card-hover-scale {
+    transition: transform 3s ease;
+}
+
+/* easy steps------------------*/
+
+.hover-step:hover .transition-icon-step {
+    transform: rotate(360deg);
+    background-color: white;
+
+}
+
+.transition-icon-step {
+    transition: all 1s ease;
+    background-color: #cfe2ff;
+}
+
+
+.transition-icon-step img {
+
+    z-index: 2;
+}
+
+.transition-icon-step:hover img {
+
+    transition: none;
+
+}
+
+/* accordion -------------------*/
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-icon div {
+    position: relative;
+    overflow: hidden;
+    /* transition: transform 1s ease; */
+}
+
+.accordion-icon div::after {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    /* transition: transform 0.6s ease, background-color 0.25s linear; */
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+}
+
+.accordion-button.collapsed .accordion-icon div::after {
+    content: "+";
+    transform: rotate(360deg);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.accordion-button:not(.collapsed) .accordion-icon div::after {
+    content: "-";
+    position: absolute;
+    inset: 0;
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+
+}
+
+
+/* test ---------------------------------------------*/
+.img-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+/*footer ---------------------------------------------*/
+.circle-icons-f {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #b3c7e6;
+}
+
+.icon-footer {
+    color: #174f70;
+    width: 15;
+}
+
+/*----------------------------------------------------------Doctor Profil ---------------------------------------------*/
+.profil-icon {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #e7e7ee;
+}
+
+
+/*--------------------------overlay -----------------------------*/
+.icons-wrapper {
+    position: sticky;
+    right: 0;
+    top: 0;
+}
+
+.black-box {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* doctor profile--------------------------------------------------- */
+
+/*--------------------------tab-list -----------------------------*/
+.nav-pills .nav-link {
+    background: none !important;
+    color: #000;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    color: blue !important;
+    border-bottom-color: blue;
+}
+
+.timeline {
+    border-left: 2px solid #ddd;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -8px;
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.h-hover:hover {
+    color: rgb(85, 85, 243);
+}
+
+.ccc {
+    color: #ccc;
+}
+
+/* footer */
+.ul-m li {
+    margin-bottom: 13px;
+}
+
+.li-c::marker {
+    color: blue;
+}
+
+.like-hover:hover {
+    background-color: green;
+
+
+}
+
+.dis-like-hover:hover {
+    background-color: red;
+
+}
+
+.like-hover:hover .h-t-w,
+.dis-like-hover:hover .h-t-w {
+    color: white !important;
+}
+
+.tab-content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* dashboard--------------------------------------------------- */
+
+.form-select option:checked {
+    background-color: #1a69bc !important;
+    color: white;
+}
+
+.h-hover:hover i {
+    color: #0d6efd;
+}
+
+.h-hover-bg {
+    text-decoration: none;
+    color: inherit;
+}
+
+.h-hover-bg:active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.h-hover-bg:active i {
+    color: white;
+}
+
+/* dashboard-- right-------------------------------------------------*/
+.btn-h:hover {
+    background-color: #000 !important;
+    color: white !important;
+
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom: 2px solid #007bff !important;
+    color: #007bff !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-bottom: 2px solid rgb(93, 98, 107);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent !important;
+    border-radius: 0;
+    color: rgb(93, 98, 107);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    background: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+}
+
+.a-h {
+    border: none;
+}
+
+.a-h:hover {
+    color: black !important;
+}
+
+.bg-hover-d:hover {
+    background-color: rgba(243, 235, 235, 0.538);
+}
+
+.a-h-blue:hover a {
+    color: blue !important;
+}
+
+/* Profile Settings--------------------------------------------------------------------------------------- */
+
+.nav-tabs {
+    border-bottom: none;
+    margin-left: 11px;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    gap: 10px;
+}
+
+
+.nav-tabs .nav-link {
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff !important;
+    color: white !important;
+    border-color: #007bff !important;
+}
+
+
+.btn-form-hover:hover {
+    color: #4049ce !important;
+    border: none;
+}
+
+.btn-form-hover-b:hover {
+    color: black !important;
+    border: none;
+}
+
+/* Profile Settings--accordion------------------------------------------------------------------------------------- */
+
+
+.accordion-button {
+    background-color: #fff !important;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button::before {
+    content: '\f078';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::before {
+    transform: rotate(180deg);
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+.accordion-button:hover {
+    background-color: #fff !important;
+    border-color: transparent !important;
+}
+
+/* scroll--arrow-------------------------------- */
+.progress-container {
+position: fixed;
+bottom: 30px;
+right: 30px;
+width: 80px;
+height: 80px;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.4s ease, visibility 0.4s ease;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.progress-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+circle-progress {
+width: 50% !important;
+height: 50% !important;
+display: block;
+}
+circle-progress svg {
+width: 70px !important;
+height: 70px !important;
+}
+
+/* circle-progress::part(value) {
+    stroke-width: 8px;
+    stroke: #00bfff;
+    stroke-linecap: round;
+} */
+circle-progress::part(base) {
+width: 70px;
+height: 70px;
+transform-origin: center center;
+}
+circle-progress::part(base) {
+transform: scale(0.7);
+transform-origin: 50% 50%;
+}
+circle-progress::part(value) {
+    stroke-width: 6px;
+    stroke: hsl(223, 82%, 60%);
+}
+
+circle-progress::part(circle) {
+    stroke-width: 6px;
+    stroke:  hsla(223, 91%, 65%, 0.348);
+}
+
+circle-progress::part(text) {
+    /* fill:  hsl(223, 82%, 60%); */
+    display: none;
+}
+
+.arrow-icon {
+position: absolute;
+top: 68%;
+left: 68%;
+transform: translate(-50%, -50%);
+font-size: 24px;
+color: hsl(223, 82%, 60%);
+transition: transform 0.2s ease;
+}
+
+.progress-container:hover .arrow-icon {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+
+
+
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block !important;
+}
+
+.owl-nav {
+    position: absolute;
+    bottom: 100%;
+    right: 2px;
+}
+
+
+
+/* input-tag ----------------------*/
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 97%;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+#tags-container .tag {
+    background: #ede8e86f;
+    color: #000;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+#tags-container .tag .remove {
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#tags-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    min-width: 100px;
+}
+
+#tag-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 80px;
+    padding: 5px;
+    font-size: 14px;
+}
+
